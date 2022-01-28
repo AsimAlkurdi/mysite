@@ -1,0 +1,59 @@
+
+
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Grayscale -->
+      <li class="nav-item {{ indexActive }}">
+        <a class="nav-link" href="{% url 'index' %}">
+          <i class="fas fa-fw fa-star-half-alt"></i>
+          <span>Brightness</span></a>
+      </li>
+
+
+      <!-- Nav Item - Rotate -->
+      <li class="nav-item {{ rotateActive }}">
+        <a class="nav-link" href="{% url 'rotate' %}">
+          <i class="fas fa-fw fa-redo"></i>
+          <span>Rotate</span></a>
+      </li>
+
+     <!-- Nav Item - resolution -->
+      <li class="nav-item {{ resolutionActive }}">
+        <a class="nav-link" href="{% url 'resolution' %}">
+          <i class="fas fa-fw fa-redo"></i>
+          <span>Resolution</span></a>
+      </li>
+  <!-- Nav Item - resolution -->
+      <li class="nav-item {{ contrastActive }}">
+        <a class="nav-link" href="{% url 'contrast' %}">
+          <i class="fas fa-fw fa-redo"></i>
+          <span>Contrast</span></a>
+      </li>
+
+
+    <!-- Nav Item - Flip -->
+      <li class="nav-item {{ flipActive }}">
+        <a class="nav-link" href="{% url 'flip' %}">
+          <i class="fas fa-fw fa-sync-alt"></i>
+          <span>Flip</span></a>
+      </li>
+    <!-- Nav Item - Crop -->
+      <li class="nav-item {{ cropActive }}">
+        <a class="nav-link" href="{% url 'crop' %}">
+          <i class="fas fa-fw fa-crop-alt"></i>
+          <span>Crop</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
